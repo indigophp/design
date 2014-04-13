@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="shortcut icon" href="assets/favicon.png">
+
+	<title>Indigo Admin</title>
+
+	<link rel="stylesheet" href="../assets/css/style.css" title="Indigo theme">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="../assets/js/lib/html5shiv.js"></script>
+		<script src="../assets/js/lib/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="http://fuel.localhost/admin">Indigo Admin</a>
+			<a class="navbar-brand" href="http://fuel.localhost/"><small>back to site &raquo;</small></a>
+		</div>
+		<div class="hidden-xs">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="dropdown">
+					<a href="" class="account dropdown-toggle" data-toggle="dropdown">
+						<span class="menu-gravatar" style="background-image:url(https://secure.gravatar.com/avatar/5c2d0d0b4cd3457db67aefcf03fd0d01?s=30&amp;d=mm)"></span>
+						<span class="user-and-welcome-wrapper">
+							<small class="welcome-text">welcome,</small>
+							<span class="username">System administrator</span>
+						</span>
+						<b class="caret"></b>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="http://fuel.localhost/admin/profile">Profile</a></li>
+						<li class="divider"></li>
+						<li><a href="http://fuel.localhost/admin/logout">Sign out</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="collapse navbar-collapse no-transition">
+			<nav class="side-navigation">
+				<div class="side-navigation-wrapper">
+					<div class="visible-xs">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="">
+								<button class="account" data-toggle="collapse" data-target="#account-menu">
+									<span class="menu-gravatar" style="background-image:url(https://secure.gravatar.com/avatar/5c2d0d0b4cd3457db67aefcf03fd0d01?s=30&amp;d=mm)"></span>
+									<span class="user-and-welcome-wrapper">
+										<small class="welcome-text">welcome,</small>
+										<span class="username">System administrator</span>
+									</span>
+									<b class="caret"></b>
+								</button>
+								<ul class="collapse" id="account-menu">
+									<li><a href="http://fuel.localhost/admin/profile">Profile</a></li>
+									<li><a href="http://fuel.localhost/admin/logout">Sign out</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div><!-- /.visible-xs -->
+					<ul class="primary" >
+						<li>
+							<a href="http://fuel.localhost/admin/">
+								<span class="glyphicon glyphicon-dashboard"></span>
+								<span class="label label-primary pull-right"></span>
+								Dashboard
+							</a>
+						</li>
+						<li>
+							<button data-toggle="collapse" data-target="#menu-2">
+								<span class="glyphicon glyphicon-user"></span>
+								<span class="label label-primary pull-right"></span>
+								Authentication
+								<b class="caret"></b>
+							</button>
+							<ul class="collapse" id="menu-2">
+								<li>
+									<a href="http://fuel.localhost/admin/auth">
+										<span class="label label-primary pull-right"></span>
+										Users
+									</a>
+								</li>
+								<li>
+									<a href="http://fuel.localhost/admin/auth/permissions">
+										<span class="label label-primary pull-right"></span>
+										Permissions
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="http://fuel.localhost/admin/warranty">
+								<span class="glyphicon glyphicon-wrench"></span>
+								<span class="label label-primary pull-right"></span>
+								Warranty
+							</a>
+						</li>
+						<li>
+							<a href="http://fuel.localhost/admin/wisecrack">
+								<span class="fa fa-quote-right"></span>
+								<span class="label label-primary pull-right"></span>
+								Wisecrack
+							</a>
+						</li>
+						<li>
+							<button data-toggle="collapse" data-target="#menu-5">
+								<span class="fa fa-cogs"></span>
+								<span class="label label-primary pull-right"></span>
+								Settings
+								<b class="caret"></b>
+							</button>
+							<ul class="collapse" id="menu-5">
+								<li>
+									<a href="http://fuel.localhost/admin/themes">
+										<span class="label label-primary pull-right"></span>
+										Themes
+									</a>
+								</li>
+								<li>
+									<a href="http://fuel.localhost/admin/enum">
+										<span class="label label-primary pull-right"></span>
+										Enums
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div> <!-- /.side-navigation-wrapper -->
+				<div class="side-navigation-footer">
+					Aucsa
+				</div>
+			</nav>
+		</div><!--/.nav-collapse -->
+	</div>

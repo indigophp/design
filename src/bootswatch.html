@@ -1,0 +1,19 @@
+<!-- build:include layout/header.html -->
+<!-- /build -->
+
+<div class="container">
+	<!-- build:include ../bower_components/bootswatch-html/src/bootswatch/bootswatch.html -->
+	<!-- /build -->
+</div>
+
+<script>
+	(function($) {
+		$(document).ready(function($) {
+			$('[data-toggle="popover"]').popover();
+			$('[data-toggle="tooltip"]').tooltip();
+			$('select').selectpicker();
+		});
+	})(jQuery);
+</script>
+<!-- build:include layout/footer.html -->
+<!-- /build -->
