@@ -1,0 +1,10 @@
+@import "../bower_components/bootstrap/less/navbar.less";
+
+.navbar-nav {
+  // Uncollapse the nav
+  @media (min-width: @grid-float-breakpoint) {
+    &.navbar-right:last-child {
+      margin-right: 0;
+    }
+  }
+}

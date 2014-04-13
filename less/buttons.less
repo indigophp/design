@@ -1,0 +1,17 @@
+@import "../bower_components/bootstrap/less/buttons.less";
+
+.btn {
+  &:active,
+  &.active {
+    border-bottom-width: 1px;
+    margin-top: 2px;
+  }
+
+  &,
+  &:active,
+  &.active {
+    &:focus {
+      outline: 0;
+    }
+  }
+}
