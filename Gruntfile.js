@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         src: [
           'bower_components/bootstrap/dist/js/bootstrap.js',
           'bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js',
-          'bower_components/bootstrap-datepicker/js/locales/bootstrap-datepickerhu.js',
+          'bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.hu.js',
           'bower_components/bootstrap-select/bootstrap-select.js',
           'bower_components/bootstrap-spinner/dist/bootstrap-spinner.js',
           'bower_components/bootstrap-switch/dist/js/bootstrap-switch.js',
