@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         banner: '<%= banner %>',
         stripBanners: false
       },
-      dist: {
+      bootstrap: {
         src: [
           'bower_components/bootstrap/dist/js/bootstrap.js',
           'bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js',
@@ -42,8 +42,8 @@ module.exports = function(grunt) {
         banner: '<%= banner %>',
         report: 'min'
       },
-      dist: {
-        src: ['<%= concat.dist.dest %>'],
+      bootstrap: {
+        src: ['<%= concat.bootstrap.dest %>'],
         dest: '<%= distPath %>/assets/js/bootstrap.min.js'
       }
     },
@@ -88,14 +88,33 @@ module.exports = function(grunt) {
         src: ["img/**/*"],
         dest: '<%= distPath %>/assets/'
       },
+      js: {
+        src: ["js/*"],
+        dest: '<%= distPath %>/assets/'
+      },
       vendor_js: {
         expand: true,
         flatten: true,
         src: [
           'bower_components/jquery/jquery.min.js',
           'bower_components/jquery/jquery-migrate.min.js',
+          'bower_components/datatables/media/jquerydataTables.js',
           'bower_components/html5shiv/dist/html5shiv.js',
-          'bower_components/respond/dest/respond.min.js'
+          'bower_components/modernizr/modernizr.js',
+          'bower_components/moment/min/moment-with-langs.min.js',
+          'bower_components/respond/dest/respond.min.js',
+        ],
+        dest: '<%= distPath %>/assets/js/lib/'
+      },
+      ckeditor: {
+        expand: true,
+        cwd: "bower_components/",
+        src: [
+          "ckeditor/*.js",
+          "ckeditor/contents.css",
+          "ckeditor/lang/**",
+          "ckeditor/plugins/**",
+          "ckeditor/skins/**",
         ],
         dest: '<%= distPath %>/assets/js/lib/'
       }
