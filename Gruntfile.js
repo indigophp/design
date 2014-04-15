@@ -161,9 +161,22 @@ module.exports = function(grunt) {
 
   grunt.registerTask('css', ['less']);
 
+  grunt.registerTask('assets', ['css', 'js', 'copy']);
+
   grunt.registerTask('html', ['processhtml', 'jsbeautifier']);
 
-  grunt.registerTask('dist', ['clean', 'css', 'js', 'html', 'copy']);
+  grunt.registerTask('dist', ['clean', 'assets', 'html']);
 
   grunt.registerTask('default', ['connect', 'watch']);
+
+  grunt.registerTask('deploy', function(env) {
+    env = env === undefined ? 'default' : env;
+
+    var deploy = grunt.file.readJSON('deploy.json');
+
+    grunt.config('distPath', deploy[env]);
+    grunt.config('clean.dist', deploy[env] + '/assets');
+
+    grunt.task.run(['clean', 'assets']);
+  });
 };
