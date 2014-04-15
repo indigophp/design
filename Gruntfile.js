@@ -27,13 +27,12 @@ module.exports = function(grunt) {
         src: [
           'bower_components/bootstrap/dist/js/bootstrap.js',
           'bower_components/bootstrap-datepicker/js/bootstrap-datepicker.js',
-          'bower_components/bootstrap-datepicker/js/locales/bootstrap-datepicker.hu.js',
           'bower_components/bootstrap-select/bootstrap-select.js',
           'bower_components/bootstrap-spinner/dist/bootstrap-spinner.js',
           'bower_components/bootstrap-switch/dist/js/bootstrap-switch.js',
           'bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js'
         ],
-        dest: '<%= distPath %>/assets/js/bootstrap.js'
+        dest: '<%= distPath %>/assets/js/lib/bootstrap.js'
       }
     },
 
@@ -44,7 +43,7 @@ module.exports = function(grunt) {
       },
       bootstrap: {
         src: ['<%= concat.bootstrap.dest %>'],
-        dest: '<%= distPath %>/assets/js/bootstrap.min.js'
+        dest: '<%= distPath %>/assets/js/lib/bootstrap.min.js'
       }
     },
 
