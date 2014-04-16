@@ -30,7 +30,8 @@ module.exports = function(grunt) {
           'bower_components/bootstrap-select/bootstrap-select.js',
           'bower_components/bootstrap-spinner/dist/bootstrap-spinner.js',
           'bower_components/bootstrap-switch/dist/js/bootstrap-switch.js',
-          'bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js'
+          'bower_components/bootstrap-tagsinput/dist/bootstrap-tagsinput.js',
+          'js/bootstrap.js'
         ],
         dest: '<%= distPath %>/assets/js/lib/bootstrap.js'
       }
@@ -88,7 +89,8 @@ module.exports = function(grunt) {
         dest: '<%= distPath %>/assets/'
       },
       js: {
-        src: ["js/*"],
+        expand: true,
+        src: ["js/*", "!js/bootstrap.js"],
         dest: '<%= distPath %>/assets/'
       },
       vendor_js: {
@@ -152,7 +154,7 @@ module.exports = function(grunt) {
     watch: {
       options: { livereload: true },
       less: {
-        files: 'less/*.less',
+        files: 'less/**/*.less',
         tasks: ['less']
       },
       html: {
