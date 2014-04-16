@@ -99,7 +99,7 @@ module.exports = function(grunt) {
         src: [
           'bower_components/jquery/jquery.min.js',
           'bower_components/jquery/jquery-migrate.min.js',
-          'bower_components/datatables/media/jquerydataTables.js',
+          'bower_components/datatables/media/js/jquery.dataTables.js',
           'bower_components/html5shiv/dist/html5shiv.js',
           'bower_components/modernizr/modernizr.js',
           'bower_components/moment/min/moment-with-langs.min.js',
