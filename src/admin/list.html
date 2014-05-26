@@ -1,0 +1,27 @@
+<!-- build:include layout/header.html -->
+<!-- /build -->
+	<h2>Items <small>List of items</small></h2>
+
+	<p>
+		<a href="" class="hidden-print btn btn-success"><span class="glyphicon glyphicon-plus"></span> Create new item</a>
+	</p>
+
+	<div class="panel panel-default">
+		<table class="datatables table table-striped table-hover" data-source="source.json">
+			<thead>
+				<!-- build:include partials/table_filter.html -->
+				<!-- /build -->
+			</thead>
+			<tbody></tbody>
+			<tfoot>
+				<!-- build:include partials/table_filter.html -->
+				<!-- /build -->
+			</tfoot>
+		</table>
+	</div>
+
+	<p>
+		<a href="" class="hidden-print btn btn-success"><span class="glyphicon glyphicon-plus"></span> Create new item</a>
+	</p>
+<!-- build:include layout/footer.html -->
+<!-- /build -->

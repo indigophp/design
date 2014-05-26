@@ -118,6 +118,12 @@ module.exports = function(grunt) {
           "ckeditor/skins/**",
         ],
         dest: '<%= distPath %>/assets/js/lib/'
+      },
+      json: {
+        expand: true,
+        cwd: "src/",
+        src: "admin/source.json",
+        dest: '<%= distPath %>/'
       }
     },
 
