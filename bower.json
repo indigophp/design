@@ -13,13 +13,17 @@
     "bootswatch": "~3.1.1",
     "bootswatch-html": "~1.0",
     "ckeditor": "~4.3.4",
-    "datatables": "~1.9.4",
+    "datatables": "~1.10.0",
+    "datatables-plugins": "*",
     "font-awesome": "~4.0.3",
     "html5shiv": "~3.7.0",
-    "indigo-bootstrap": "latest",
-    "jquery": "~1.10.2",
+    "jquery": "~1.11.0",
+    "jquery-migrate": "~1.2.1",
     "modernizr": "~2.6.2",
     "moment": "~2.5.1",
     "respond": "~1.4.2"
+  },
+  "resolutions": {
+    "jquery": "~1.11.0"
   }
 }
