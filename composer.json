@@ -1,0 +1,12 @@
+{
+    "name": "indigophp/indigo-design",
+    "description": "IndigoPHP default theme design",
+    "license": "MIT",
+    "homepage": "https://indigophp.com",
+    "authors": [
+        {
+            "name": "Márk Sági-Kazár",
+            "email": "mark.sagikazar@gmail.com"
+        }
+    ]
+}
