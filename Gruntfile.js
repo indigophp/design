@@ -195,13 +195,11 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', ['connect', 'watch']);
 
-  grunt.registerTask('deploy', function(env) {
-    env = env === undefined ? 'default' : env;
+  grunt.registerTask('deploy', function() {
+    var path = grunt.option('path');
 
-    var deploy = grunt.file.readJSON('deploy.json');
-
-    grunt.config('distPath', deploy[env]);
-    grunt.config('clean.dist', deploy[env] + '/assets');
+    grunt.config('distPath', path);
+    grunt.config('clean.dist', path + '/assets');
 
     grunt.task.run(['clean', 'assets']);
   });
