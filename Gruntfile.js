@@ -115,6 +115,7 @@ module.exports = function(grunt) {
           "ckeditor/contents.css",
           "ckeditor/lang/**",
           "ckeditor/plugins/**",
+          "ckeditor/adapters/jquery.js",
           "ckeditor/skins/**",
         ],
         dest: '<%= distPath %>/assets/js/lib/'
