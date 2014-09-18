@@ -104,6 +104,7 @@ module.exports = function(grunt) {
           'bower_components/modernizr/modernizr.js',
           'bower_components/moment/min/moment-with-langs.min.js',
           'bower_components/respond/dest/respond.min.js',
+          'bower_components/bootbox/bootbox.js',
         ],
         dest: '<%= distPath %>/assets/js/lib/'
       },

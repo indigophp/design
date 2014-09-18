@@ -8,6 +8,7 @@
     "package.json"
   ],
   "dependencies": {
+    "bootbox": "~4.3.0",
     "bootstrap": "~3.2.0",
     "bootstrap-html": "~1.0",
     "bootswatch": "~3.2.0",
