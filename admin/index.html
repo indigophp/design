@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="shortcut icon" href="assets/favicon.png">
+
+    <title>Indigo Admin</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" title="Indigo theme">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+		<script src="../assets/js/lib/html5shiv.js"></script>
+		<script src="../assets/js/lib/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="">Indigo Admin</a>
+            <a class="navbar-brand" href=""><small>back to site &raquo;</small></a>
+        </div>
+        <div class="hidden-xs">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="" class="account dropdown-toggle" data-toggle="dropdown">
+                        <span class="menu-gravatar" style="background-image:url(https://secure.gravatar.com/avatar/5c2d0d0b4cd3457db67aefcf03fd0d00?s=30&amp;d=mm)"></span>
+                        <span class="user-and-welcome-wrapper">
+							<small class="welcome-text">welcome,</small>
+							<span class="username">System administrator</span>
+                        </span>
+                        <b class="caret"></b>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">Profile</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="">Sign out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="collapse navbar-collapse no-transition">
+            <nav class="side-navigation">
+                <div class="side-navigation-wrapper">
+                    <div class="visible-xs">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="">
+                                <button class="account" data-toggle="collapse" data-target="#account-menu">
+                                    <span class="menu-gravatar" style="background-image:url(https://secure.gravatar.com/avatar/5c2d0d0b4cd3457db67aefcf03fd0d01?s=30&amp;d=mm)"></span>
+                                    <span class="user-and-welcome-wrapper">
+										<small class="welcome-text">welcome,</small>
+										<span class="username">System administrator</span>
+                                    </span>
+                                    <b class="caret"></b>
+                                </button>
+                                <ul class="collapse" id="account-menu">
+                                    <li><a href="">Profile</a>
+                                    </li>
+                                    <li><a href="">Sign out</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.visible-xs -->
+                    <ul class="primary">
+                        <li>
+                            <a href="">
+                                <span class="glyphicon glyphicon-dashboard"></span>
+                                <span class="label label-primary pull-right"></span> Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <button data-toggle="collapse" data-target="#menu-2">
+                                <span class="glyphicon glyphicon-user"></span>
+                                <span class="label label-primary pull-right"></span> Authentication
+                                <b class="caret"></b>
+                            </button>
+                            <ul class="collapse" id="menu-2">
+                                <li>
+                                    <a href="">
+                                        <span class="label label-primary pull-right"></span> Users
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="label label-primary pull-right"></span> Permissions
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <button data-toggle="collapse" data-target="#menu-5">
+                                <span class="fa fa-cogs"></span>
+                                <span class="label label-primary pull-right"></span> Settings
+                                <b class="caret"></b>
+                            </button>
+                            <ul class="collapse" id="menu-5">
+                                <li>
+                                    <a href="">
+                                        <span class="label label-primary pull-right"></span> Themes
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <span class="label label-primary pull-right"></span> Enums
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.side-navigation-wrapper -->
+                <div class="side-navigation-footer">
+                </div>
+            </nav>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+    <div class="content-wrap">
+        <div class="alert alert-dismissable alert-success">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+            Welcome, System administrator!
+        </div>
+        <h2>Dashboard <small>Overview of your site</small></h2>
+        <p class="lead">
+            You can see the most important informations from all of your installed modules here.
+        </p>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <div class="panel-title">Users</div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <span class="badge">3</span> Number of users:
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">3</span> Number of administrators:
+                        </li>
+                        <li class="list-group-item">
+                            <span class="badge">0</span> Users registered within a week:
+                        </li>
+                    </ul>
+                    <div class="list-group">
+                        <a href="" class="list-group-item">
+                            <img width="40" src="https://secure.gravatar.com/avatar/0f67f71991c2b1cb1a08581d67708124?s=40&amp;d=mm" alt="" class="pull-left img-rounded">
+                            <p class="list-group-item-text"> &nbsp; Latest user</p>
+                            <h4 class="list-group-item-heading">
+							&nbsp; Latest User
+						</h4>
+                            <span class="clearfix"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="content-wrap-footer">
+            <hr> © 2013 Indigo Admin by <a href="https://github.com/indigophp">Indigo</a>
+        </footer>
+    </div>
+    <script src="../assets/js/lib/jquery.min.js"></script>
+    <script src="../assets/js/lib/jquery-migrate.min.js"></script>
+    <script src="../assets/js/lib/ckeditor/ckeditor.js"></script>
+    <script src="../assets/js/lib/ckeditor/adapters/jquery.js"></script>
+    <script src="../assets/js/lib/bootstrap.min.js"></script>
+    <script src="../assets/js/lib/moment-with-langs.min.js"></script>
+    <script src="../assets/js/lib/jquery.dataTables.js"></script>
+    <script src="../assets/js/datatables.js"></script>
+    <script src="../assets/js/admin.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            IndigoAdmin.pageInit('http://fuel.localhost/');
+            $(IndigoAdmin).on('unityready', function() {
+                IndigoAdmin.displayNofitication('admin', 'Logged in successfully.', '');
+            });
+        });
+    </script>
+</body>
+
+</html>
