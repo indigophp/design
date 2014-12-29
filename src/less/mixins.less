@@ -1,0 +1,27 @@
+@import "../../bower_components/bootstrap/less/mixins.less";
+
+.button-variant(@color; @background; @border) {
+	border-style: solid;
+	border-width: 1px 1px 3px 1px;
+}
+
+// Panels
+// -------------------------
+.panel-variant(@border; @heading-text-color; @heading-bg-color; @heading-border) {
+	border-color: @border;
+
+	& .panel-heading {
+		color: @heading-text-color;
+		background-color: @heading-bg-color;
+		border-color: @heading-border;
+
+		+ .panel-collapse .panel-body {
+			border-top-color: @border;
+		}
+	}
+	& .panel-footer {
+		+ .panel-collapse .panel-body {
+			border-bottom-color: @border;
+		}
+	}
+}
